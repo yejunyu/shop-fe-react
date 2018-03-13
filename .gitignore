@@ -1,3 +1,4 @@
+.bs_Store
 node_modules/
 dist/
 yarn*
