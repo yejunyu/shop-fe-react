@@ -1,14 +1,12 @@
 {
-  "name": "mmall-fe",
+  "name": "mmall",
   "version": "1.0.0",
-  "description": "前端代码",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "yy",
-  "license": "ISC",
-  "devDependencies": {
-    "webpack": "^4.1.1"
+  "license": "MIT",
+  "dependencies": {
+    "css-loader": "^0.28.10",
+    "extract-text-webpack-plugin": "1.0.1",
+    "style-loader": "^0.20.3",
+    "webpack": "1.15.0"
   }
 }
