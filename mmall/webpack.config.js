@@ -2,7 +2,7 @@
  * @Author: yejunyu 
  * @Date: 2018-03-13 14:18:06 
  * @Last Modified by: yejunyu
- * @Last Modified time: 2018-03-13 18:02:37
+ * @Last Modified time: 2018-03-14 16:47:25
  */
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -40,6 +40,14 @@ var config = {
             {test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader","css-loader") },
             {test: /\.(gif|png|jpg|jpeg|woff|svg|eot|ttf)\??.*$/, loader: 'url-loader?limit:1000&name=resourse/[name].[hash:7].[ext]'}
         ]
+    },
+    resolve:{
+        alias: {
+            utils : __dirname + '/src/utils',
+            page : __dirname + '/src/page',
+            service : __dirname + '/src/service',
+            image : __dirname + '/src/image',
+        }
     },
     plugins: [
         new webpack.optimize.CommonsChunkPlugin({
