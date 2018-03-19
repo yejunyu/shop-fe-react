@@ -2,9 +2,9 @@
  * @Author: yejunyu 
  * @Date: 2018-03-13 14:20:54 
  * @Last Modified by: yejunyu
- * @Last Modified time: 2018-03-14 17:01:25
+ * @Last Modified time: 2018-03-19 14:50:15
  */
-var _mm = require('utils/mm');
+var _mm = require('util/mm');
 
 _mm.request({
     url: 'http://localhost:8080/manage/product/list.do',
